@@ -1,0 +1,15 @@
+{
+  "name": "template",
+  "version": "0.0.1",
+  "description": "...",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Jacob B. Sanders <jacob.sanders@cloudhybrid.io> (https://github.com/iac-factory)",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "esm": "latest"
+  }
+}

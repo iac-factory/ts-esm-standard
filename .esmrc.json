@@ -1,0 +1,6 @@
+{
+    "cjs": true,
+    "mode": "all",
+    "await": true,
+    "wasm": false
+}
