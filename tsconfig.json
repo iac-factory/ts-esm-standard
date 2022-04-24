@@ -1,16 +1,8 @@
 {
     "extends": "@tsconfig/esm",
-    "ts-node": {
-        "swc": false,
-        "transpileOnly": true,
-        "emit": false,
-        "files": true,
-        "experimentalReplAwait": false,
-        "preferTsExts": true,
-        "esm": true
-    },
     "compilerOptions": {
         "lib": [
+            "DOM",
             "ES2017",
             "ES2018",
             "ESNext"
@@ -34,11 +26,12 @@
         "disableSizeLimit": true,
         "declaration": true,
         "declarationMap": true,
+        "declarationDir": "distribution/@types",
         "moduleResolution": "Node",
         "useDefineForClassFields": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
         "assumeChangesOnlyAffectDirectDependencies": false
     }, "include": [".esmrc.json", "**/*.json", "**/*.ts"],
-    "exclude": ["**/globals.*", "distribution"]
+    "exclude": ["**/globals.*", "distribution", "**/*.d.ts"]
 }
