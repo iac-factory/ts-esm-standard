@@ -1,0 +1,42 @@
+{
+    "extends": "@tsconfig/esm",
+    "ts-node": {
+        "swc": false,
+        "transpileOnly": true,
+        "emit": false,
+        "files": true,
+        "experimentalReplAwait": false,
+        "preferTsExts": true,
+        "esm": true
+    },
+    "compilerOptions": {
+        "lib": [
+            "ES2018",
+            "ESNext"
+        ],
+        "alwaysStrict": true,
+        "downlevelIteration": true,
+        "forceConsistentCasingInFileNames": true,
+        "stripInternal": true,
+        "isolatedModules": true,
+        "skipDefaultLibCheck": true,
+        "importsNotUsedAsValues": "preserve",
+        "resolveJsonModule": true,
+        "target": "ES2018",
+        "module": "ESNext",
+        "outDir": "distribution",
+        "sourceMap": true,
+        "diagnostics": false,
+        "composite": true,
+        "incremental": true,
+        "preserveConstEnums": true,
+        "disableSizeLimit": true,
+        "declaration": true,
+        "declarationMap": true,
+        "moduleResolution": "Node",
+        "useDefineForClassFields": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "assumeChangesOnlyAffectDirectDependencies": true
+    }, "include": [".esmrc.json", "**/*.json", "**/*.ts", "**/globals.d.ts"]
+}

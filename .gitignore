@@ -56,3 +56,6 @@ tsconfig.tsbuildinfo
 coverage
 
 lerna-debug.log
+
+*.js
+*.map

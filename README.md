@@ -1,16 +1,15 @@
-# `esm-standard` #
+# `ts-esm-standard` #
  
-A Node.js ESM Standard Template Package
+A Node.js ESM Standard Template Package -- Extended via TypeScript
 
-## General Information ##
+## Distribution ##
 
-`npm` supports `esm`:
+Distribution(s) are compliant back to `ES3`.
 
-```shell
-npm init esm
-```
+Compilation is achieved via `npm start` or `npm run start`.
 
-- [`npm` Official Documentation](https://docs.npmjs.com/cli/v8/commands/npm-init#forwarding-additional-options)
+Once compiled, a `node` process can then execute any one of the following:
 
-- [Reference](https://github.com/standard-things/create-esm)
-    - [Merge into `node.js`'s Standard Library](https://github.com/standard-things/node)
+- `./distribution`
+- `./distribution/common-js`
+- `./distribution/ecma`

@@ -1,6 +1,7 @@
 {
     "cjs": true,
-    "mode": "all",
+    "mode": "auto",
+    "cache": false,
     "await": true,
     "wasm": false
 }

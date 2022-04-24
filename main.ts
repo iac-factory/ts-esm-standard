@@ -1,5 +1,3 @@
-// ESM syntax is supported.
-
 const Test = async () => {
     const duration = 5000;
     const $ = async () => await new Promise(async (resolve) => {
@@ -10,8 +8,10 @@ const Test = async () => {
     });
 
     await $();
-    
+
     process.stdout.write("Complete :D" + "\n");
 };
 
-export default (async () => await Test())();
+(async () => await Test())();
+
+export {};
