@@ -4,7 +4,6 @@
     "description": "...",
     "main": "index.js",
     "module": "main.js",
-    "type": "commonjs",
     "scripts": {
         "start": "ts-node .",
         "prestart": "npm run compile",
@@ -23,7 +22,6 @@
         "typescript": "latest"
     },
     "esm": {
-        "enabled": true,
         "cache": false,
         "cjs": true,
         "mode": "auto",
