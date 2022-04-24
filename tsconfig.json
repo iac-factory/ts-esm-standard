@@ -11,6 +11,7 @@
     },
     "compilerOptions": {
         "lib": [
+            "ES2017",
             "ES2018",
             "ESNext"
         ],
@@ -18,7 +19,7 @@
         "downlevelIteration": true,
         "forceConsistentCasingInFileNames": true,
         "stripInternal": true,
-        "isolatedModules": true,
+        "isolatedModules": false,
         "skipDefaultLibCheck": true,
         "importsNotUsedAsValues": "preserve",
         "resolveJsonModule": true,
@@ -26,7 +27,7 @@
         "module": "ESNext",
         "outDir": "distribution",
         "sourceMap": true,
-        "diagnostics": false,
+        "diagnostics": true,
         "composite": true,
         "incremental": true,
         "preserveConstEnums": true,
@@ -37,6 +38,7 @@
         "useDefineForClassFields": true,
         "esModuleInterop": true,
         "allowSyntheticDefaultImports": true,
-        "assumeChangesOnlyAffectDirectDependencies": true
-    }, "include": [".esmrc.json", "**/*.json", "**/*.ts", "**/globals.d.ts"]
+        "assumeChangesOnlyAffectDirectDependencies": false
+    }, "include": [".esmrc.json", "**/*.json", "**/*.ts"],
+    "exclude": ["**/globals.*", "distribution"]
 }
