@@ -20,15 +20,9 @@
     },
     "devDependencies": {
         "@tsconfig/esm": "^1.0.0",
+        "@types/esm": "^3.2.0",
         "@types/node": "^17.0.31",
         "typescript": "latest"
-    },
-    "esm": {
-        "cache": false,
-        "cjs": true,
-        "mode": "auto",
-        "await": true,
-        "wasm": false
     },
     "directories": {
         ".": "distribution",
