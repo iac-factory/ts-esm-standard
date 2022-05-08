@@ -1,10 +1,9 @@
 const Main = async () => {
     const duration = 5000;
-    const $ = async () => await new Promise(async (resolve) => {
+    const $ = async () => new Promise(async (resolve) => {
         process.stdout.write("Awaiting ..." + "\n");
-        await setTimeout[Object.getOwnPropertySymbols(setTimeout)[0]](duration);
 
-        resolve(true);
+        setTimeout(() => resolve(true), duration);
     });
 
     await $();
@@ -12,7 +11,7 @@ const Main = async () => {
     process.stdout.write("  - Complete :D" + "\n");
 };
 
-(async () => await Main())();
+void (async () => Main())();
 
 export default Main;
 
