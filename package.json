@@ -19,6 +19,8 @@
         "esm": "latest"
     },
     "devDependencies": {
+        "@tsconfig/esm": "^1.0.0",
+        "@types/node": "^17.0.31",
         "typescript": "latest"
     },
     "esm": {
