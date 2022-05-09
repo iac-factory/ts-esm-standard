@@ -1,5 +1,5 @@
-const Main = async () => {
-    const { Template } = await import("./template");
+const Generate = async () => {
+    const { Template } = await import("..");
 
     const instance = new Template( "package.template.tpl", "package.test.json" );
 
@@ -17,6 +17,6 @@ const Main = async () => {
     ] );
 };
 
-export { Main };
+export { Generate };
 
-export default Main;
+export default Generate;

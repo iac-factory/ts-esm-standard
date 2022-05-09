@@ -32,6 +32,8 @@ class Template {
 
         const result = content.matchAll(expression);
 
+        // Either interface `Symbol.iterator`, or create
+        // a `Generator` function (`*` & `yield` syntax)
         for (const iteration of result[Symbol.iterator]()) {
             data.push(iteration);
         }
