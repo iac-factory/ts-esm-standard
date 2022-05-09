@@ -1,12 +1,12 @@
 {
     "extends": "./tsconfig.json",
     "ts-node": {
-        "esm": false
+        "esm": false,
+        "preferTsExts": false,
+        "experimentalReplAwait": false
     },
     "compilerOptions": {
         "target": "ES3",
-        "outDir": "distribution/common-js" ,
         "useDefineForClassFields": false
-    },
-    "exclude": ["distribution"]
+    }
 }

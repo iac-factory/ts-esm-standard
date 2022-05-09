@@ -1,17 +1,16 @@
-const Main = async () => {
-    const duration = 5000;
-    const $ = async () => new Promise(async (resolve) => {
-        process.stdout.write("Awaiting ..." + "\n");
+const Main = async (duration: number = 5000) => {
+    const handler = async () => new Promise((resolve) => {
+        process.stdout.write("Initializing ..." + "\n");
 
         setTimeout(() => resolve(true), duration);
     });
 
-    await $();
+    void await handler();
 
-    process.stdout.write("  - Complete :D" + "\n");
+    return true;
 };
 
-void (async () => Main())();
+void (async () => Main() )();
 
 export default Main;
 

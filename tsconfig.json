@@ -1,13 +1,15 @@
 {
     "extends": "@tsconfig/node16-strictest-esm",
+    "ts-node": {
+        "preferTsExts": true
+    },
     "compilerOptions": {
         "resolveJsonModule": true,
-        "outDir": "distribution",
         "diagnostics": true,
-        "declaration": true,
-        "declarationMap": true,
-        "declarationDir": "distribution/@types",
-        "moduleResolution": "Node"
+        "moduleResolution": "Node",
+        "importsNotUsedAsValues": "preserve",
+        "allowSyntheticDefaultImports": true,
+        "module": "CommonJS",
     }, "include": ["**/*.json", "**/*.ts"],
-    "exclude": ["**/globals.*", "distribution", "**/*.d.ts"]
+    "exclude": ["**/*.d.ts"]
 }
